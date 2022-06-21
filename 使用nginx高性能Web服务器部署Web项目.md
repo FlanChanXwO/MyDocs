@@ -29,3 +29,4 @@ rm -rf ./* #删除所有web资源
 ```shell
 rm -rf ./index.html #删除当前目录下的index.html文件
 ```
+> ### 删除了指定的web资源后，再次执行之前的上传web资源步骤，即可完成资源更新
