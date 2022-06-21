@@ -1,22 +1,22 @@
 ## 一、Nginx部署Web资源到服务器上
-![img_2.png](../../../../../../MyDocs/img/img_14.png)
+![img_2.png](/img/img_14.png)
 -------------------------
 ### location中的文本需要更改为如下内容
 > #### /root/nginx/html
-![img_1.png](../../../../../../MyDocs/img/img_17.png)
+![img_1.png](/img/img_17.png)
 -------------------------
-![img_2.png](../../../../../../MyDocs/img/img_16.png)
+![img_2.png](/img/img_16.png)
 ### 查看Web资源是否已经被部署到服务器上
 在浏览器中输入以下IP地址然后Enter回车访问
 > 106.14.206.16
 ### 如果出现了预期内容，则表明部署成功
-![img_3.png](../../../../../../MyDocs/img/img_15.png)
+![img_3.png](/img/img_15.png)
 
 ## 二、Web资源的更新
 > 在Nginx中，所有的web资源都可通过热部署方式部署，无需重启服务器。
 > 接下来将介绍如何更改部署内容。
 - 步骤1：通过终端连接服务器
-![img.png](../../../../../../MyDocs/img/img_19.png)
+![img.png](/img/img_19.png)
 - 步骤2：执行以下命令，删除所有web应用资源，然后即可留出新空间给新的web应用资源
 ```shell
 cd ~/nginx/html

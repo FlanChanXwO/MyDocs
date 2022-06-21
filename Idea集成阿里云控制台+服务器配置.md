@@ -1,30 +1,30 @@
 # Idea集成阿里云控制台
 - 集成插件下载，插件名如图，在Idea插件市场搜索插件名并下载即可
- ![img.png](../../../../../../MyDocs/img/img_18.png)
+ ![img.png](/img/img_18.png)
 -----------------------
 - 步骤1：点击Add Host
 
-![img.png](../../../../../../MyDocs/img/img_6.png)
+![img.png](/img/img_6.png)
 
 - 步骤2：按照如图步骤进行配置，在主机列表中增加Ip地址: "106.14.206.16"
   填入你的用户名和密码，配置名称随意
 
-![img_1.png](../../../../../../MyDocs/img/img_8.png)
+![img_1.png](/img/img_8.png)
 
 - 步骤3：在配置完成后，点击 "测试连接状况" ， 查看是否能够成功连接服务器
 
-![img_2.png](../../../../../../MyDocs/img/img_7.png)
+![img_2.png](/img/img_7.png)
 
 - 步骤4：出现连接成功的提示后，即可连接服务器
 
-![img_3.png](../../../../../../MyDocs/img/img_3.png)
+![img_3.png](/img/img_3.png)
 
-![img_4.png](../../../../../../MyDocs/img/img_4.png)
+![img_4.png](/img/img_4.png)
 
 成功使用终端连接到了服务器
 -----------------------
   
-![img_5.png](../../../../../../MyDocs/img/img_5.png)
+![img_5.png](/img/img_5.png)
 
 连接服务器篇完结!
 -----------------------
@@ -143,8 +143,8 @@ docker run -id --name=mysql_c1 -v $PWD/conf:/etc/mysql/conf.d -v $PWD/logs:/logs
 - 步骤2：通过SQL图形化管理工具与mysql数据库进行远程连接
 ##### 首先创建新的数据库连接配置
 创建新的数据库连接配置，测试连接成功后即可Apply->OK
-- ![img.png](../../../../../../MyDocs/img/img_13.png)
-- ![img_2.png](../../../../../../MyDocs/img/img_11.png)
+- ![img.png](/img/img_13.png)
+- ![img_2.png](/img/img_11.png)
 -------------------------
 点击 "Make Global" 选项这样即可在切换不同项目时候，保持管理工具中的数据源存在
-- ![img_1.png](../../../../../../MyDocs/img/img_12.png)
+- ![img_1.png](/img/img_12.png)
