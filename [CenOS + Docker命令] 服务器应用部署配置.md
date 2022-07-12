@@ -257,3 +257,12 @@ ip3 mq3
 ```
 
 - ip1 ~ ipn 为具体的IP地址，保证每个IP地址不同即可
+
+
+## <span id="redis">六、Redis的应用部署</span>
+
+执行下面的shell语句来部署redis。
+
+```sh
+docker run --name redis -d redis:6.2.7 redis-server --save 60 1 --loglevel warning
+```
