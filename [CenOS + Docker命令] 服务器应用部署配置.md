@@ -115,10 +115,15 @@ default_type  application/octet-stream;
 
 	# 反向代理配置
 	upstream server_list{
-	   # 这个是tomcat的访问路径
+	   # 负载均衡算法
+	   # ip_hash; 按照IP地址的哈希值分配 
+	   # least_conn; 最少连接
+	   # server localhost:8900 weight=5; 轮询权重分配
 	   server localhost:8080;
 	   server localhost:9999;
 	}
+	
+	
     
     server {
         listen 80; #监听80端口号
@@ -131,6 +136,11 @@ default_type  application/octet-stream;
             # 反向代理
             proxy_pass http://server_list;
         }
+         #拦截静态资源
+#         location ~ .*\.(html|htm|gif|jpg|jpeg|bmp|png|ico|js|css)$ {
+#         root static;
+#         expires      30d;  
+#        }
     }
     
     server {
